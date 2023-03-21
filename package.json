@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "axios": "^1.2.5",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "postman": "^0.2.0",
+    "swagger": "^0.7.5"
+  },
+  "name": "projet_bloggy_back",
+  "description": "hello la team",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "db": "psql -U admin_bloggy -d bloggy -f migrations/database/1.create_tables.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Kelvin/projet_bloggy_back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Kelvin/projet_bloggy_back/issues"
+  },
+  "homepage": "https://github.com/O-clock-Kelvin/projet_bloggy_back#readme"
+}

@@ -1,0 +1,68 @@
+### Récupère toutes les members
+
+GET http://localhost:5000/api/member
+
+### Crèe un membre
+
+POST http://localhost:5000/addMember
+
+
+### Récupère un member
+
+GET http://localhost:5000/api/member/:id
+
+### Modifie un member
+
+PATCH http://localhost:5000/api/member/:id
+
+
+### Supprime un member
+
+DELETE  http://localhost:5000/api/member/:id
+
+
+
+
+### Récupère tous les cards
+
+GET http://localhost:5000/api/cards
+
+
+### Crèe un post
+
+POST http://localhost:5000/api/posts
+content-type: application/json
+
+{
+    "categoryId": 89,
+    "slug": "test3",
+    "title": "test3",
+    "excerpt": "test3",
+    "content": "test3"
+}
+
+### Récupère un post
+
+GET http://localhost:3000/api/posts/53
+
+### Modifie un post
+
+PATCH http://localhost:3000/api/posts/54
+content-type: application/json
+
+{
+    "categoryId": 89,
+    "slug": "test3",
+    "title": "test3",
+    "excerpt": "test4",
+    "content": "test3"
+}
+
+
+### Supprime un post
+
+DELETE  http://localhost:3000/api/posts/1
+
+### Récupère tous les posts d'une catégorie
+
+GET  http://localhost:3000/api/posts/category/:id
